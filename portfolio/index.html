@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> Mr Teacher</title>
+  <meta name="description" content="Olawise — Private tutor. Subject specialist, lesson packages, and online + in-person tutoring." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Olawise</a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html" class="contact-link">Contact</a></li>
+        </ul>
+      </nav>	
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="profile-box">
+        <img src="assets/images/profile.jpg"
+      alt="Profile photo" width="200" height="200">      </div>
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Olawise — Private Tutor</h1>
+          <p class="subtitle">Experienced teacher specialising in Mathematics and sciences. Clear lessons, measurable progress, and flexible scheduling.</p>
+
+          <ul class="quick-info">
+            <li><strong>Levels:</strong> Junior Secondary School — Senior Secondary School</li>
+            <li><strong>Formats:</strong> In-person • Online</li>
+            <li><strong>Location:</strong> Abuja (available online)</li>
+          </ul>
+
+          <div class="hero-actions">
+            <a href="contact.html" class="btn primary">Book a session</a>
+            <a href="portfolio.html" class="btn outline">See teaching materials</a>
+          </div>
+        </div>
+
+        <aside class="hero-media" aria-hidden="false">
+          <div class="photo-card">
+            <img src="assets/images/profile.jpg" alt="Olawise — tutor portrait" />
+            <div class="photo-caption">Olawise — Teacher & private tutor</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="features container">
+      <h2>What I offer</h2>
+      <div class="features-grid">
+        <article>
+          <h3>Structured lessons</h3>
+          <p>Lesson plans aligned to curriculum with clear objectives and measurable outcomes.</p>
+        </article>
+
+        <article>
+          <h3>Assessment & feedback</h3>
+          <p>Regular tests and detailed feedback to show progress and identify gaps.</p>
+        </article>
+
+        <article>
+          <h3>Resources</h3>
+          <p>Worksheets, model answers and revision notes you can download and use at home.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-preview container">
+      <div class="about-card">
+        <h2>About me</h2>
+        <p>I am an experienced teacher with a track record of improving student performance. I value clarity, patience, and practical practice. View my full bio and qualifications on the About page.</p>
+        <a class="btn small" href="about.html">Read more</a>
+      </div>
+
+      <div class="testimonials-preview">
+        <h2>Recent results</h2>
+        <blockquote>
+          "My child improved from 45% to 76% in one term. Clear method and excellent feedback." — Parent
+        </blockquote>
+        <a class="btn small outline" href="testimonials.html">More testimonials</a>
+      </div>
+    </section>
+
+    <section class="callout container">
+      <h2>Ready to improve?</h2>
+      <p>Book a free 20-minute consultation and we’ll assess needs and set a plan.</p>
+      <a class="btn primary" href="contact.html">Request consultation</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Olawise — Tutor</h3>
+        <p>Subjects: Mathematics, sciences. Based in Abuja. Available online.</p>
+      </div>
+
+      <div>
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="portfolio.html">Materials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p>Phone: <a href="tel:+2349065667462">+2349065667462</a></p>
+        <p>Email: <a href="mailto:olalekanarowolo88@gmail.com">olalekanarowolo88@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="container">© <span id="year"></span> Olawise. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Small scripts: year & simple menu for small screens.
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
